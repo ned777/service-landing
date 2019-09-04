@@ -1,0 +1,466 @@
+<link href="https://fonts.googleapis.com/css?family=Special Elite|Raleway|Rock+Salt&display=swap" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/simple-line-icons.css" rel="stylesheet">
+
+
+<!--Designed by Ned Nguyen-->
+<script>  
+    $(document).ready(function() {
+      $("body").fadeIn(4000);
+    });   
+</script>
+
+
+<style>
+
+body{
+  display: none;
+  position: relative;
+  height: 1000px;
+  overflow-y: scroll;
+}
+
+#contact{
+    background-color: black;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 25px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+.grid {
+    display: flex;
+}
+
+@media screen and (max-width: 500px) {
+    .desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 125px;
+    width: 80vw;
+    font-size: 20px;
+    line-height: 15px;
+    margin-top:10px;
+  }
+  .grid {
+    display: flex;
+    line-height: 16px;
+}
+}
+
+
+#header{
+  flex-wrap: wrap;
+}
+
+#header-img{
+    height: 100px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  #header-img{
+    height: auto;
+    width: 230px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+}
+
+.input-field {
+  height: 40px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  font-size: 16px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 30%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+  font-size:15px;
+  color: white;
+}
+
+#main{
+    background-image:url(img/img.jpg); 
+    background-size: cover;
+    background-attachment:fixed;
+
+}
+
+.name{
+    font-size: 40px;
+    font-family: 'Rock Salt', cursive;
+}
+
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    opacity: 50%; 
+    line-height: 16px;
+    background-color: black;
+    color: white;
+}
+
+.navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Pragati Narrow', sans-serif;
+    width: 25%; 
+    text-align: center; 
+    border-radius: 30px;
+    opacity: 10; 
+    transition: all .5s;
+}
+
+.navbar a:hover {
+  background-color:#798E9B;
+  color: white;
+  border-radius: 30px;
+}
+
+.navbar a.active {
+  background-color:white;
+  border-radius: 30px;
+  color:black;
+}
+
+.nav ul{
+  display:flex;
+  margin:0;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: center;   
+  }
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100%  / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.25)
+}
+
+.product > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product > ol {
+  margin: 15px 0;
+}
+
+.product > ol > li {
+  padding: 5px 0;
+}
+
+.product > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: black;
+  color: white;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.product > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 40%;
+  vertical-align: middle;
+}
+
+
+</style>
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<body id="main" > 
+
+    <title>Office Space</title>
+    <div  class="container">
+     
+        <div class="row">   
+           
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
+                <div  class="container navbar fixed-top">                
+                        <a href="#features">Features</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+  
+   
+  
+          <about style="margin-top:120px; margin-bottom: 100px;" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">  
+            
+            <h1 class="name" style="margin-top:200px;"> 
+              <center> 
+              <div>  <img id="header-img" type="image" src="logo.png"></img>  </div> <br>
+              Office Space Rental
+              </center></h1>
+            <p  style="font-family: 'Raleway', sans-serif;font-size: 20px; padding: 10%; padding-top: 1%;" >  
+                 Affordable & Ready-To-Go. Rent office space. 
+                 Experience the new way to find office space.  
+                 Short-Term or Long-Term Office Space Rents. </p>
+  
+          </about>
+
+      </div>
+
+
+      <div style="background-color: rgba(255, 255, 255, 0.45)">  
+        
+        <br>
+        <br>
+        <br>
+        <br> 
+        <br>
+        <br>
+        <br>
+        <br> 
+        
+
+      <div class="container">
+          <section id="features">
+            <div class="grid">
+        
+              <div class="desc">
+                <h2 style="font-size: 26px; font-family: 'Rock Salt', cursive;">Affordable Rate</h2>
+                <p style="font-size: 24px; font-family: 'Special Elite', cursive">
+                  We offer weekly rate, monthly rate, and annual rate.
+                </p>
+
+              </div>
+            </div>
+            <div class="grid">
+              <div class="desc">
+                <h2 style="font-size: 26px; font-family: 'Rock Salt', cursive;">Security</h2>
+                <p style="font-size: 24px; font-family: 'Special Elite', cursive">
+                  We make sure you recieve your trombone as soon as we have finished
+                  making it. We also provide free returns if you are not satisfied.
+                </p>
+
+              </div>
+            </div>
+            <div class="grid">             
+              </div>
+              <div class="desc">
+                <h2 style="font-size: 26px; font-family: 'Rock Salt', cursive;">Equipments & Accessories</h2>
+                <p style="font-size: 24px; font-family: 'Special Elite', cursive">
+                  We offer basic equipments and accessories you need for the office space.  Upgrade to annual for a dedicated & personal phone line.
+                </p>
+
+              </div>
+            </section>
+            </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <center>    
+
+              <iframe width="1000" height="650" src="https://www.youtube.com/embed/CWCd-lMhvt8" frameborder="0" picture-in-picture"></iframe>
+
+            </center>
+ 
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>
+            <br> 
+            <br>
+            <br>
+            <br>
+    
+
+
+            <section id="pricing">
+                <div class="product">
+                  <div class="level">Weekly Rate</div>
+                  <h2>$250 per week</h2>
+                  <ol>
+                    <li>Up to 200 square feet</li>
+                    <li>Basic office equipments</li>
+                    <li>Shared mailbox & phoneline</li>
+                    <li>24/7 security</li>
+                  </ol>
+                  <button class="btn">Select</button>
+                </div>
+                <div class="product">
+                  <div class="level">Monthly Rate</div>
+                  <h2>$900 per month</h2>
+                  <ol>
+                    <li>Up to 400 square feet</li>
+                    <li>Basic office equipments</li>
+                    <li>Shared mailbox & phoneline</li>
+                    <li>24/7 security</li>
+                  </ol>
+                  <button class="btn">Select</button>
+                </div>
+                <div class="product">
+                  <div class="level">Yearly Rate</div>
+                  <h2>$12,000 per year</h2>
+                  <ol>
+                    <li>Up to 1000 square feet</li>
+                    <li>Advance office equipments & access to VIP lounge</li>
+                    <li>Custom mailbox and personal phonelines</li>
+                    <li>24/7 security</li>
+                  </ol>
+                  <button class="btn">Select</button>
+                </div>
+              </section>
+
+              <br>
+              <br> 
+              <br>
+              <br>
+              <br>
+              <br> 
+              <br>
+              <br>
+              <br>
+              <br> 
+              <br>
+              <br>
+              <br>
+              <br>
+              <br> 
+              <br>
+              <br>
+
+
+              <form id="contact"> 
+                  <br>
+                  <br>
+                <center> <contact style="font-size:33px; color:white"> Contact </contact> </center>
+              <label id="name-label" class="labels" for="name">* Name: </label>
+              <input type="text" class="input-field rightTab" placeholder="Enter your name" id="name" required>
+      
+              <label id="email-label" class="labels" for="email">* Email: </label>
+              <input type="email" class="input-field rightTab" placeholder="Enter your email" id="email" required>
+      
+              <label id="number-label" class="labels" for="number">* Number: </label>
+              <input type="number" class="input-field rightTab" placeholder="Enter your number" id="number" min="0" max="9" required>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+            </form>
+
+              <br>
+              <br> 
+              <br>
+              <br>
+              <br>
+              <br> 
+              <br>
+              <br>
+              <br>
+              <br> 
+              <br>
+              <br>
+              <br>
+              <br>
+              <br> 
+              <br>
+              <br>
+
+          </div>
+
+   
+         
+             
+        
+    </body>  
+  
